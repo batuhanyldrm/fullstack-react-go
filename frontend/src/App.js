@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1 style={{display:"flex", justifyContent:"center"}}>blog</h1>
-      <Blog />
+      <Blog/>
       <InputField/>
     </div>
   );
