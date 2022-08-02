@@ -39,7 +39,6 @@ func (api *Api) PostBlogsHandler(c *fiber.Ctx) error {
 		c.Status(fiber.StatusBadRequest)
 	}
 	err = api.Service.PostBlogs(createBlogs)
-
 	switch err {
 	case nil:
 		c.Status(fiber.StatusCreated)

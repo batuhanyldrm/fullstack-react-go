@@ -32,8 +32,7 @@ func (repository *Repository) CreateBlog(blog models.Blog) error {
 }
 
 func NewRepository() *Repository {
-	uri := "mongodb+srv://Cluster:cluster@cluster0.hnmuy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-	/* uri := "mongodb+srv://Cluster:cluster@cluster0.hnmuy.mongodb.net/test?authSource=admin&replicaSet=atlas-jbznje-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true" */
+	uri:=""
 	client, err := mongo.NewClient(options.Client().ApplyURI(uri))
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 
